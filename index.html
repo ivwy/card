@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>card</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="top">
+                <div class="details">
+                    <div class="img">
+                        <img src="./assets/images/82ff2af9732454f01c6b398c0cd4af78.png" class="cover">
+                    </div>
+                    <h3>prod_wiihy<br>
+                        <span>Tokyo, Japan</span>
+                    </h3>
+                </div>
+                <div>
+                    <img src="./assets/images/d.png" class="dot">
+                </div>
+            </div>
+            <div class="post">
+                <section class="social">
+                    <ul class="media">
+                        <li data-text="GitHub" data-color="#161B22">
+                            <a onclick="window.open('https://github.com/ivwy', '_blank')" class="github">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li data-text="YouTube" data-color="#b20000">
+                            <a onclick="window.open('https://youtube.com/@ivwy', '_blank')" class="youtube">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li data-text="Twitter" data-color="#0099ff">
+                            <a onclick="window.open('https://twitter.com/prod_wiihy', '_blank')" class="twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li data-text="Instagram" data-color="#e4405f">
+                            <a onclick="window.open('https://instagram.com/prod_wiihy', '_blank')" class="instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="actionbtns">
+                <div class="left">
+                    <img src="./assets/images/h.png" class="heart" onclick="likeButton()">
+                    <img src="./assets/images/c.png">
+                    <img src="./assets/images/s.png">
+                </div>
+                <div class="right">
+                    <img src="./assets/images/b.png">
+                </div>
+            </div>
+            <h4 class="likes">3,468 likes</h4>
+            <h4 class="description">
+                <b>prod_wiihy</b> VFX & GFX, SFX Artist.<br>
+                <span>#Ae</span>
+                <span>#blender</span>
+                <span>#Live2D</span>
+            </h4>
+            <h4 class="comments">
+                View all 26 comments
+            </h4>
+            <div class="input">
+                <div class="userimg">
+                    <img src="./assets/images/user.jpeg" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Add a comment...">
+            </div>
+            <h5 class="date">
+                1 hours ago
+            </h5>
+        </div>
+
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".media li a"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </body>
+</html>

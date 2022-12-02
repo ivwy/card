@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.card {
+    position: relative;
+    width: 360px;
+    min-height: 400px;
+    background: #fff;
+    box-shadow: 15px 15px 60px rgba(0, 0, 0, .15);
+    padding: 20px;
+}
+
+.card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .top .details {
+    display: flex;
+    align-items: center;
+}
+
+.card .top .details .img {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .top .details h3 {
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.card .top .details h3 span {
+    font-size: .75em;
+}
+
+.dot {
+    transform: scale(.6);
+    cursor: pointer;
+}
+
+.post {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    margin: 10px 0 15px;
+    transition: .5s;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, .01);
+    background: #fff;
+}
+
+.social {
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    transition: .25s;
+}
+
+.media {
+    position: absolute;
+    display: flex;
+}
+
+.media li {
+    list-style: none;
+}
+
+.media li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 60px));
+    font-size: 7vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: .25s;
+    opacity: 0;
+}
+
+.media li:hover::before {
+    color: #fff;
+    opacity: .1;
+    transition: .5s;
+    transform: translate(-50%, calc(-50% + 75px));
+}
+
+.media li a {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 2em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, .1);
+    transition: background .5s;
+}
+
+.js-tilt-glare {
+    border-radius: 10px;
+}
+
+.media li a:hover.github {
+    background: #161B22;
+}
+
+.media li a:hover.youtube {
+    background: #f90000;
+}
+
+.media li a:hover.twitter {
+    background: #0099ff;
+}
+
+.media li a:hover.instagram {
+    background: linear-gradient(45deg, rgba(254,212,117,1) 0%,rgba(229,61,93,1) 50%,rgba(194,49,134,1) 70%,rgba(156,56,187,1) 100%);
+}
+
+.media li a .fa {
+    transition: .25s;
+    pointer-events: none;
+}
+
+.media li a:hover .fa {
+    color: #fff;
+    transform: scale(1.75) translateZ(25px);
+}
+
+.actionbtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionbtns img {
+    max-width: 24px;
+    cursor: pointer;
+}
+
+.actionbtns .left img {
+    margin-right: 8px;
+}
+
+.likes {
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #4d4d4f;
+}
+
+.description {
+    font-weight: 400;
+    margin-top: 5px;
+    color: #777;
+    line-height: 1.5em;
+}
+
+.description b {
+    color: #262626;   
+}
+
+.description span {
+    color: #1d92ff;
+    cursor: pointer;
+}
+
+.comments {
+    margin-top: 10px;
+    font-weight: 400;
+    color: #999;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input .userimg {
+    position: relative;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.text {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #262626;
+}
+
+.text::placeholder {
+    color: #777;
+}
+
+.date {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #777;
+}
