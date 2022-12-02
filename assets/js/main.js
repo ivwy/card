@@ -18,8 +18,7 @@ function likeButton() {
     if(heart.src.match("h.png")) {
         heart.src = "./assets/images/h1.png";
         likes.innerHTML = "3,469 likes";
-    }
-    else {
+    } else {
         heart.src = "./assets/images/h.png";
         likes.innerHTML = "3,468 likes";
     }
